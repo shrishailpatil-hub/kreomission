@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#game-container {
+    width: 600px;
+    height: 400px;
+    background-color: #2c2c3e;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #555;
+}
+
+#target {
+    font-size: 2.5rem;
+    position: absolute;
+    cursor: pointer;
+    transition: top 0.3s ease, left 0.3s ease, transform 0.2s ease;
+}
+
+#target:hover {
+    transform: scale(1.2);
+}
+
+#game-container div {
+    position: absolute;
+    z-index: 10;
+}
